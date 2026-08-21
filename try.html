@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why It Matters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #ffffff;
+      color: #09090b;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem 1.5rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 580px;
+    }
+
+    .header-label {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #71717a;
+      margin-bottom: 0.5rem;
+    }
+
+    .headline {
+      font-size: 1.875rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      color: #09090b;
+      margin-bottom: 2rem;
+    }
+
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.125rem;
+    }
+
+    .icon-wrapper {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: #f4f4f5;
+      border: 1px solid #e4e4e7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #18181b;
+      transition: all 0.2s ease;
+    }
+
+    .feature-item:hover .icon-wrapper {
+      background-color: #09090b;
+      border-color: #09090b;
+      color: #ffffff;
+    }
+
+    .icon-wrapper svg {
+      width: 20px;
+      height: 20px;
+      stroke-width: 2;
+    }
+
+    .content {
+      padding-top: 0.125rem;
+    }
+
+    .title {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      line-height: 1.35;
+      color: #09090b;
+      margin-bottom: 0.25rem;
+      letter-spacing: -0.01em;
+    }
+
+    .description {
+      font-size: 0.9375rem;
+      line-height: 1.5;
+      color: #52525b;
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <div class="header-label">Impact</div>
+    <h1 class="headline">Why it matters</h1>
+
+    <div class="feature-list">
+      <!-- Item 1: Slow investigation -->
+      <div class="feature-item">
+        <div class="icon-wrapper">
+          <!-- Hourglass / Lucide Icons style -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 22h14"/>
+            <path d="M5 2h14"/>
+            <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/>
+            <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/>
+          </svg>
+        </div>
+        <div class="content">
+          <div class="title">Slow investigation</div>
+          <div class="description">The fix might take 5 minutes. Finding the cause takes hours.</div>
+        </div>
+      </div>
+
+      <!-- Item 2: Recurrent SRE toil (Tech-niche upgrade) -->
+      <div class="feature-item">
+        <div class="icon-wrapper">
+          <!-- Refresh / Sync Lucide Icons style -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+            <path d="M21 3v5h-5"/>
+            <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+            <path d="M3 21v-5h5"/>
+          </svg>
+        </div>
+        <div class="content">
+          <div class="title">Recurrent operational toil</div>
+          <div class="description">The same kind of incident, solved by hand, again and again.</div>
+        </div>
+      </div>
+
+      <!-- Item 3: Human error -->
+      <div class="feature-item">
+        <div class="icon-wrapper">
+          <!-- Triangle Alert Lucide Icons style -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/>
+            <line x1="12" y1="9" x2="12" y2="13"/>
+            <line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
+        </div>
+        <div class="content">
+          <div class="title">Human error</div>
+          <div class="description">Tired engineers make worse decisions under pressure — exactly when it matters most.</div>
+        </div>
+      </div>
+
+      <!-- Item 4: Context switching -->
+      <div class="feature-item">
+        <div class="icon-wrapper">
+          <!-- Arrow Left-Right Switch Lucide Icons style -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m16 3 4 4-4 4"/>
+            <path d="M20 7H4"/>
+            <path d="m8 21-4-4 4-4"/>
+            <path d="M4 17h16"/>
+          </svg>
+        </div>
+        <div class="content">
+          <div class="title">Context switching</div>
+          <div class="description">Every incident pulls a developer off real work and back into firefighting.</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
